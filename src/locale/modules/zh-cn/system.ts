@@ -1,7 +1,8 @@
 export default {
   system: {
     title: '后台管理系统',
-    subTitle: '时间不在于你拥有多少,而在于你怎样使用。',
+    // subTitle: '时间不在于你拥有多少,而在于你怎样使用。',
+    subTitle: '发奋识遍天下字，立志读尽人间书。— 苏轼',
     welcome: '欢迎登录',
     login: '登录',
     userName: '用户名',

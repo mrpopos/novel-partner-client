@@ -1,10 +1,10 @@
 /*
- * @Author: luoxi
- * @Date: 2022-01-25 09:51:12
- * @LastEditors: luoxi
- * @LastEditTime: 2022-01-25 12:40:52
- * @FilePath: \vue-admin-box\vite.config.ts
- * @Description: 
+ * @Author: tushaolong 1213167844@qq.com
+ * @Date: 2022-09-29 14:17:31
+ * @LastEditors: tushaolong 1213167844@qq.com
+ * @LastEditTime: 2022-09-29 14:49:46
+ * @FilePath: \www\novel-partner-client\vite.config.ts
+ * @Description: vite配置文件
  */
 import { ConfigEnv, UserConfigExport } from 'vite'
 import vue from '@vitejs/plugin-vue'

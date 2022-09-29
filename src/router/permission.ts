@@ -1,6 +1,10 @@
 /*
- * @Date: 2022-07-24 21:43:47
- * @Description: 
+ * @Author: tushaolong 1213167844@qq.com
+ * @Date: 2022-09-29 14:17:31
+ * @LastEditors: tushaolong 1213167844@qq.com
+ * @LastEditTime: 2022-09-29 15:19:12
+ * @FilePath: \www\novel-partner-client\src\router\permission.ts
+ * @Description: 路由鉴权
  */
 /** 引入类型 */
 import type { Route } from './index.type'

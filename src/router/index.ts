@@ -1,10 +1,10 @@
 /*
- * @Author: luoxi
- * @Date: 2022-01-25 09:51:12
- * @LastEditors: luoxi
- * @LastEditTime: 2022-01-25 12:25:51
- * @FilePath: \vue-admin-box\src\router\index.ts
- * @Description: 
+ * @Author: tushaolong 1213167844@qq.com
+ * @Date: 2022-09-29 14:17:31
+ * @LastEditors: tushaolong 1213167844@qq.com
+ * @LastEditTime: 2022-09-29 14:50:52
+ * @FilePath: \www\novel-partner-client\src\router\index.ts
+ * @Description: 路由入口文件
  */
 /**
  * @description 所有人可使用的参数配置列表
@@ -64,7 +64,7 @@ router.beforeEach((to, _from, next) => {
 // 路由跳转后的监听操作
 router.afterEach((to, _from) => {
   const keepAliveComponentsName = store.getters['keepAlive/keepAliveComponentsName'] || []
-  const name = to.matched[to.matched.length - 1].components.default.name
+  const name = (to.matched[to.matched.length - 1].components)!.default.name
   if (to.meta && to.meta.cache && name && !keepAliveComponentsName.includes(name)) {
     store.commit('keepAlive/addKeepAliveComponentsName', name)
   }

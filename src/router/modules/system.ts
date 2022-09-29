@@ -1,3 +1,11 @@
+/*
+ * @Author: tushaolong 1213167844@qq.com
+ * @Date: 2022-09-29 14:17:31
+ * @LastEditors: tushaolong 1213167844@qq.com
+ * @LastEditTime: 2022-09-29 17:33:01
+ * @FilePath: \www\novel-partner-client\src\router\modules\system.ts
+ * @Description: 免鉴权系统路由
+ */
 import type { Route } from '../index.type'
 import Layout from '@/layout/index.vue'
 import { createNameComponent } from '../createNode'
@@ -33,12 +41,12 @@ const route: Route[] = [
     meta: { title: 'message.system.login', hideTabs: true }
   },
   {
-    // 找不到路由重定向到404页面
-    path: "/:pathMatch(.*)",
+    path: '/:pathMatch(.*)',
     component: Layout,
-    redirect: "/404",
+    redirect: '/404',
     hideMenu: true,
-    meta: { title: '' },
+    meta: { title: '404' },
+    children: []
   },
 ]
 
