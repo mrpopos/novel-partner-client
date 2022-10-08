@@ -1,3 +1,11 @@
+/*
+ * @Author: tushaolong 1213167844@qq.com
+ * @Date: 2022-09-29 14:17:31
+ * @LastEditors: tushaolong 1213167844@qq.com
+ * @LastEditTime: 2022-10-08 18:10:44
+ * @FilePath: \web\novel-partner-client\src\views\main\dashboard\components\charts\modules\pie.ts
+ * @Description: echarts图表
+ */
 const option = {
   title: {
       text: '浏览器占比变化',
@@ -27,11 +35,11 @@ const option = {
   },
   radar: {
       indicator: [
-          { text: 'IE8-', max: 400},
-          { text: 'IE9+', max: 400},
-          { text: 'Safari', max: 400},
-          { text: 'Firefox', max: 400},
-          { text: 'Chrome', max: 400}
+          { name: 'IE8-', max: 1000 },
+          { name: 'IE9+', max: 1000 },
+          { name: 'Safari', max: 1000 },
+          { name: 'Firefox', max: 1000 },
+          { name: 'Chrome', max: 1000 },
       ]
   },
   series: (function (){

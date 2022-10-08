@@ -41,7 +41,7 @@
             </template>
           </el-input>
 
-          <el-button type="primary" :loading="form.loading" @click="submit" style="width: 100%;" size="medium">
+          <el-button type="primary" :loading="form.loading" @click="submit" style="width: 100%;" size="default">
             {{ $t('message.system.login') }}
           </el-button>
         </el-form>
@@ -58,8 +58,8 @@ import { systemTitle, systemSubTitle } from '@/config'
 import { defineComponent, ref, reactive } from 'vue'
 import { useStore } from 'vuex'
 import { useRouter, useRoute } from 'vue-router'
-import type { RouteLocationRaw  } from 'vue-router'
-import { getAuthRoutes } from '@/router/permission'
+// import type { RouteLocationRaw  } from 'vue-router'
+// import { getAuthRoutes } from '@/router/permission'
 import { ElMessage } from 'element-plus'
 import selectLang from '@/layout/Header/functionList/word.vue'
 import loginLeftPng from '@/assets/login/left.jpg'
@@ -73,8 +73,8 @@ export default defineComponent({
     const router = useRouter()
     const route = useRoute()
     const form = reactive({
-      name: 'admin',
-      password: '123456',
+      name: '',
+      password: '',
       loading: false
     })
     const passwordType = ref('password')
@@ -247,9 +247,6 @@ export default defineComponent({
 
     h1 {
       margin-top: 0;
-    }
-
-    .form {
     }
   }
 }

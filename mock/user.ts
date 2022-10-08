@@ -1,3 +1,11 @@
+/*
+ * @Author: tushaolong 1213167844@qq.com
+ * @Date: 2022-09-29 14:17:31
+ * @LastEditors: tushaolong 1213167844@qq.com
+ * @LastEditTime: 2022-10-08 11:34:13
+ * @FilePath: \web\novel-partner-client\mock\user.ts
+ * @Description: 用户信息mock接口
+ */
 import { MockMethod } from 'vite-plugin-mock'
 const users = [
   { name: 'admin', password: '123456', token: 'admin', info: {
@@ -42,7 +50,7 @@ export default [
       const { token } = body
       const info = users.find(user => {
         return user.token === token
-      }).info
+      })!.info
       if (info) {
         return {
           code: 200,

@@ -1,3 +1,11 @@
+/*
+ * @Author: tushaolong 1213167844@qq.com
+ * @Date: 2022-09-29 14:17:31
+ * @LastEditors: tushaolong 1213167844@qq.com
+ * @LastEditTime: 2022-10-08 11:05:05
+ * @FilePath: \web\novel-partner-client\src\store\modules\user.ts
+ * @Description: 用户状态管理
+ */
 import { loginApi, getInfoApi, loginOutApi } from '@/api/user'
 import { ActionContext } from 'vuex'
 
@@ -54,7 +62,6 @@ const actions = {
       })
     })
   },
-
   // login out the system after user click the loginOut button
   loginOut({ commit }: ActionContext<userState, userState>) {
     loginOutApi()

@@ -1,7 +1,15 @@
+/*
+ * @Author: tushaolong 1213167844@qq.com
+ * @Date: 2022-09-29 17:52:01
+ * @LastEditors: tushaolong 1213167844@qq.com
+ * @LastEditTime: 2022-10-08 10:53:47
+ * @FilePath: \web\novel-partner-client\src\locale\modules\en\system.ts
+ * @Description: 国际化
+ */
 export default {
   system: {
     title: 'backendsystem',
-    subTitle: 'few lines to write beautiful admin',
+    subTitle: 'Hard to know all over the world, determined to read all the books in the world.',
     welcome: 'welcome login',
     login: 'login',
     userName: 'userName',

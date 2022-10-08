@@ -2,7 +2,7 @@
  * @Author: tushaolong 1213167844@qq.com
  * @Date: 2022-09-29 14:17:31
  * @LastEditors: tushaolong 1213167844@qq.com
- * @LastEditTime: 2022-09-29 15:19:12
+ * @LastEditTime: 2022-10-08 17:35:08
  * @FilePath: \www\novel-partner-client\src\router\permission.ts
  * @Description: 路由鉴权
  */
@@ -24,30 +24,12 @@ import { createNameComponent } from './createNode'
 
 /** 引入需要权限的Modules */
 import Dashboard from './modules/dashboard'
-import Document from './modules/document'
-import Pages from './modules/pages'
-import Menu from './modules/menu'
-import Component from './modules/component'
-import Directive from './modules/directive'
 import SystemManage from './modules/systemManage'
-import Chart from './modules/chart'
-import Print from './modules/print'
-import Community from './modules/community'
-import Tab from './modules/tab'
 
 /** 登录后需要动态加入的本地路由 */
 const asyncRoutes: Route[] = [
   ...Dashboard,
-  ...Document,
-  ...Component,
-  ...Pages,
-  ...Menu,
-  ...Directive,
-  ...Chart,
   ...SystemManage,
-  ...Print,
-  ...Community,
-  ...Tab,
 ]
 
 /** 

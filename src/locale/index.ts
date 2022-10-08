@@ -1,3 +1,11 @@
+/*
+ * @Author: tushaolong 1213167844@qq.com
+ * @Date: 2022-09-29 17:52:01
+ * @LastEditors: tushaolong 1213167844@qq.com
+ * @LastEditTime: 2022-10-08 17:53:23
+ * @FilePath: \web\novel-partner-client\src\locale\index.ts
+ * @Description: locale
+ */
 // 提示信息仅在开发环境生效
 import { createI18n, LocaleMessages, VueMessageType } from 'vue-i18n'
 import store from '@/store'

@@ -61,7 +61,7 @@ export default defineComponent({
     height: 36px;
   }
   :deep(.el-tree-node.is-current > .el-tree-node__content) {
-    // background-color: rgba(64, 158, 255, 0.4);
+    background-color: rgba(64, 158, 255, 0.4);
   }
   :deep(.el-tree-node > .el-tree-node__content) {
     transition: 0.2s;

@@ -2,7 +2,7 @@
  * @Author: tushaolong 1213167844@qq.com
  * @Date: 2022-09-29 14:17:31
  * @LastEditors: tushaolong 1213167844@qq.com
- * @LastEditTime: 2022-09-29 14:49:46
+ * @LastEditTime: 2022-10-08 17:52:01
  * @FilePath: \www\novel-partner-client\vite.config.ts
  * @Description: vite配置文件
  */
@@ -16,7 +16,8 @@ const pathResolve = (dir: string): any => {
 }
 
 const alias: Record<string, string> = {
-  '@': pathResolve("src")
+  '@': pathResolve("src"),
+  'vue-i18n': 'vue-i18n/dist/vue-i18n.cjs.js'
 }
 
 /** 
