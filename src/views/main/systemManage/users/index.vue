@@ -21,8 +21,8 @@
       </div>
       <div class="layout-container-form-search">
         <el-input
-          v-model="query.input"
-          :placeholder="$t('message.common.searchTip')"
+          v-model="query.inputName"
+          :placeholder="$t('message.common.searchUserName')"
         ></el-input>
         <el-button
           type="primary"
@@ -109,7 +109,7 @@ export default defineComponent({
   setup() {
     // 存储搜索用的数据
     const query = reactive({
-      input: "",
+      inputName: "",
     });
     // 弹窗控制器
     const layer: LayerInterface = reactive({

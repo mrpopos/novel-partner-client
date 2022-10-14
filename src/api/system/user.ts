@@ -1,3 +1,11 @@
+/*
+ * @Author: tushaolong 1213167844@qq.com
+ * @Date: 2022-09-29 14:17:31
+ * @LastEditors: tushaolong 1213167844@qq.com
+ * @LastEditTime: 2022-10-12 10:37:18
+ * @FilePath: \web\novel-partner-client\src\api\system\user.ts
+ * @Description: 系统管理 users请求
+ */
 import request from '@/utils/system/request'
 
 // 获取数据api
@@ -5,7 +13,7 @@ export function getData(data: object) {
   return request({
     url: '/system/user/list',
     method: 'post',
-    baseURL: '/mock',
+    baseURL: '/cy-api',
     data
   })
 }
