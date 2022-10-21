@@ -2,7 +2,7 @@
  * @Author: tushaolong 1213167844@qq.com
  * @Date: 2022-09-29 14:17:31
  * @LastEditors: tushaolong 1213167844@qq.com
- * @LastEditTime: 2022-10-21 18:43:18
+ * @LastEditTime: 2022-10-21 18:55:26
  * @FilePath: \web\novel-partner-client\src\store\modules\user.ts
  * @Description: 用户状态管理
  */
