@@ -105,18 +105,17 @@ export default defineComponent({
       .then(() => {
         form.loading = true
         let params = {
-          name: form.name,
+          username: form.name,
           password: form.password
         }
         store.dispatch('user/login', params)
-        .then(async () => {
-          ElMessage.success({
-            message: '登录成功',
-            type: 'success',
-            showClose: true,
-            duration: 1000
-          })
-          location.reload()
+        .then(async (res) => {
+          if (res.code === 200) {
+            ElMessage.success({ message: 'user login successfully', type: 'success', showClose: true, duration: 1000 })
+            location.reload()
+          } else {
+            ElMessage.warning({ message: 'user login failure', type: 'warning', showClose: true, duration: 1000 })
+          }
           // await getAuthRoutes()
           // await router.push(route.query.redirect as RouteLocationRaw || '/')
         }).finally(() => {

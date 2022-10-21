@@ -2,7 +2,7 @@
  * @Author: tushaolong 1213167844@qq.com
  * @Date: 2022-09-29 14:17:31
  * @LastEditors: tushaolong 1213167844@qq.com
- * @LastEditTime: 2022-10-12 17:02:32
+ * @LastEditTime: 2022-10-21 18:43:18
  * @FilePath: \web\novel-partner-client\src\store\modules\user.ts
  * @Description: 用户状态管理
  */
@@ -42,13 +42,12 @@ const actions = {
     return new Promise((resolve, reject) => {
       loginApi(params)
       .then(res => {
-        commit('tokenChange', res.data.token)
-        dispatch('getInfo', { token: res.data.token })
+        commit('tokenChange', res.token)
+        dispatch('getInfo')
         .then(infoRes => {
-          resolve(res.data.token)
+          resolve(infoRes)
         })
       }).catch(err => {
-        console.log('login res------', err)
         reject(err)
       })
     })
@@ -56,10 +55,10 @@ const actions = {
   // get user info after user logined
   getInfo({ commit }: ActionContext<userState, userState>, params: any) {
     return new Promise((resolve, reject) => {
-      getInfoApi(params)
+      getInfoApi()
       .then(res => {
-        commit('infoChange', res.data.info)
-        resolve(res.data.info)
+        commit('infoChange', res.data)
+        resolve(res)
       })
     })
   },

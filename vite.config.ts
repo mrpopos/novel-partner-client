@@ -2,7 +2,7 @@
  * @Author: tushaolong 1213167844@qq.com
  * @Date: 2022-09-29 14:17:31
  * @LastEditors: tushaolong 1213167844@qq.com
- * @LastEditTime: 2022-10-10 16:03:49
+ * @LastEditTime: 2022-10-21 12:01:00
  * @FilePath: \www\novel-partner-client\vite.config.ts
  * @Description: vite配置文件
  */
@@ -40,7 +40,7 @@ export default ({ command }: ConfigEnv): UserConfigExport => {
         '^/cy-api/.*': {
           target: 'http://127.0.0.1:3000',
           changeOrigin: true,
-          rewrite: path => path.replace(/^\/cy-api/, '')
+          rewrite: path => path.replace(/^\/cy-api/, '/cy-api')
         }
       },
     },

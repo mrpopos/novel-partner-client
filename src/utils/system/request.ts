@@ -2,7 +2,7 @@
  * @Author: tushaolong 1213167844@qq.com
  * @Date: 2022-09-29 14:17:31
  * @LastEditors: tushaolong 1213167844@qq.com
- * @LastEditTime: 2022-10-08 11:22:51
+ * @LastEditTime: 2022-10-21 18:19:44
  * @FilePath: \web\novel-partner-client\src\utils\system\request.ts
  * @Description: axios请求封装
  */
@@ -21,7 +21,7 @@ service.interceptors.request.use(
   (config: AxiosRequestConfig) => {
     // JWT鉴权处理
     if (store.getters['user/token']) {
-      config.headers!['token'] = store.state.user.token
+      config.headers!.Authorization = 'Bearer ' + store.state.user.token
     }
     return config
   },

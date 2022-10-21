@@ -2,7 +2,7 @@
  * @Author: tushaolong 1213167844@qq.com
  * @Date: 2022-09-29 14:17:31
  * @LastEditors: tushaolong 1213167844@qq.com
- * @LastEditTime: 2022-10-12 16:31:24
+ * @LastEditTime: 2022-10-21 18:33:56
  * @FilePath: \web\novel-partner-client\src\api\user.ts
  * @Description: 用户模块请求文件
  */
@@ -19,12 +19,11 @@ export function loginApi(data: object) {
 }
 
 /** 获取用户信息Api */
-export function getInfoApi(data: object) {
+export function getInfoApi() {
   return request({
     url: '/user/info',
     method: 'post',
-    baseURL: '/mock',
-    data
+    baseURL: '/cy-api'
   })
 }
 
@@ -33,7 +32,7 @@ export function loginOutApi() {
   return request({
     url: '/user/out',
     method: 'post',
-    baseURL: '/mock'
+    baseURL: '/cy-api'
   })
 }
 
